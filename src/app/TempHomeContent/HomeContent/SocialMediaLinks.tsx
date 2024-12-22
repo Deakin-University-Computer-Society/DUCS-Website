@@ -3,6 +3,7 @@ import {
 	Bluesky,
 	Discord,
 	Facebook,
+	Github,
 	Instagram,
 	LinkedIn,
 	Threads,
@@ -40,6 +41,15 @@ export function SocaialMediaLinks() {
 			>
 				<LinkedIn className="w-6 h-6" />
 			</a>
+
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href="https://github.com/Deakin-University-Computer-Society"
+			>
+				<Github className="w-6 h-6" />
+			</a>
+
 			<NewNotification className="w-6 h-6" width={4}>
 				<a
 					target="_blank"

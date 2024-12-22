@@ -7,7 +7,7 @@ export function Header() {
 			<img
 				src={Logo}
 				alt="DUCS Logo"
-				className="w-[160px] h-[175px]  mx-auto"
+				className="w-[160px] h-[176px] mx-auto"
 			/>
 
 			<h1 className="text-3xl font-bold text-center">

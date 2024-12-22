@@ -14,6 +14,9 @@ export function Footer() {
 				<Link to="/links" className="hover:underline">
 					Quick Links
 				</Link>
+				<Link to="/qrcodes" className="hover:underline">
+					QR Codes
+				</Link>
 			</div>
 		</footer>
 	);

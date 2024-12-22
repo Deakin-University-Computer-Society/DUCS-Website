@@ -1,5 +1,6 @@
 import { QuickLinksPage } from "@/app/TempHomeContent/quickLinks/QuickLinksPage";
-import { TempHome } from "@/app/TempHome";
+import { QuickQRCodesPage } from "@/app/TempHomeContent/QuickQRCode/QuickQRCodes";
+import { TempHome } from "@/app/TempHomeContent/TempHome";
 // import { NavBar } from "@/components/custom/nav_bar";
 import { Error404, ErrorRouteHandler } from "@/error/error_pages";
 
@@ -32,6 +33,7 @@ export function PageRoutes() {
 
 				<Route path="/" element={<TempHome />}></Route>
 				<Route path="/links" element={<QuickLinksPage />}></Route>
+				<Route path="/qrcodes" element={<QuickQRCodesPage />}></Route>
 			</Routes>
 		</BrowserRouter>
 	);

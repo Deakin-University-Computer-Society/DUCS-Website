@@ -1,12 +1,12 @@
 import { Separator } from "@/components/ui/separator";
 import { ModeToggle } from "@/components/theme/theme-toggle";
-import { About } from "./TempHomeContent/About";
-import { Sponsors } from "./TempHomeContent/Sponsors";
-import { Join } from "./TempHomeContent/Join";
-import { Contact } from "./TempHomeContent/Contact";
-import { Positions } from "./TempHomeContent/Positions";
-import { Footer } from "./TempHomeContent/Footer";
-import { Header } from "./TempHomeContent/Header";
+import { About } from "./HomeContent/About";
+import { Sponsors } from "./HomeContent/Sponsors";
+import { Join } from "./HomeContent/Join";
+import { Contact } from "./HomeContent/Contact";
+import { Positions } from "./HomeContent/Positions";
+import { Footer } from "./Footer";
+import { Header } from "./HomeContent/Header";
 
 export function TempHome() {
 	return (
