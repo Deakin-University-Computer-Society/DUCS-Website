@@ -1,21 +1,15 @@
-import { QuickLinksPage } from "@/app/TempHomeContent/quickLinks/QuickLinksPage";
+import { ExecutivePositionsPage } from "@/app/TempHomeContent/ExecutivePositionsPage";
+import { QuickLinksPage } from "@/app/TempHomeContent/QuickLinks/QuickLinksPage";
 import { QuickQRCodesPage } from "@/app/TempHomeContent/QuickQRCode/QuickQRCodes";
 import { TempHome } from "@/app/TempHomeContent/TempHome";
 // import { NavBar } from "@/components/custom/nav_bar";
 import { Error404, ErrorRouteHandler } from "@/error/error_pages";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import { Home } from "@/app/home";
-// import { ProjectDUCSWebsite } from "@/app/projects/ducs_website";
-// import { ProjectDUCSApp } from "@/app/projects/ducs_app";
-// import { About } from "@/app/about";
-// import { Join } from "@/app/join";
 
 export function PageRoutes() {
 	return (
-		<BrowserRouter
-			future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
-		>
+		<BrowserRouter>
 			{/* <NavBar /> */}
 			<Routes>
 				{/* The 404 page is the default page is a page isnt found */}
@@ -34,6 +28,10 @@ export function PageRoutes() {
 				<Route path="/" element={<TempHome />}></Route>
 				<Route path="/links" element={<QuickLinksPage />}></Route>
 				<Route path="/qrcodes" element={<QuickQRCodesPage />}></Route>
+				<Route
+					path="/executives"
+					element={<ExecutivePositionsPage />}
+				></Route>
 			</Routes>
 		</BrowserRouter>
 	);

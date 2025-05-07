@@ -6,7 +6,7 @@ export function NewNotification({
 	width,
 }: {
 	children: React.ReactNode;
-	className: string;
+	className?: string;
 	width: number;
 }) {
 	return (

@@ -29,7 +29,7 @@ const error_data: {
 		description: "Service Unavailable",
 	},
 
-	// i dont know if we need anymore error codes, but i added the basics especially when we use a proper server.
+	// i dont know if we need anymore error codes, but i added the basics.
 };
 
 // for direct use when pages just dont exist.

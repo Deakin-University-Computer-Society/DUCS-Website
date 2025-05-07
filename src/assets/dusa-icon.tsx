@@ -2,7 +2,8 @@ import { SVGProps } from "react";
 
 const DUSA = (props: SVGProps<SVGSVGElement>) => (
 	<svg
-		width="1em"
+		width="auto"
+		height="auto"
 		viewBox="0 0 926 400"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"

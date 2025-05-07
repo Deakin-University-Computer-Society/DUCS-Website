@@ -6,8 +6,8 @@ import type { SVGProps } from "react";
 const Bluesky = (props: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		width="1em"
-		height="1em"
+		width="auto"
+		height="auto"
 		preserveAspectRatio="xMidYMid"
 		viewBox="0 0 256 226"
 		{...props}
@@ -22,8 +22,8 @@ const Bluesky = (props: SVGProps<SVGSVGElement>) => (
 const Instagram = (props: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		width="1em"
-		height="1em"
+		width="auto"
+		height="auto"
 		preserveAspectRatio="xMidYMid"
 		viewBox="0 0 256 256"
 		{...props}
@@ -37,8 +37,8 @@ const Instagram = (props: SVGProps<SVGSVGElement>) => (
 
 const LinkedIn = (props: SVGProps<SVGSVGElement>) => (
 	<svg
-		width="1em"
-		height="1em"
+		width="auto"
+		height="auto"
 		xmlns="http://www.w3.org/2000/svg"
 		preserveAspectRatio="xMidYMid"
 		viewBox="0 0 256 256"
@@ -54,8 +54,8 @@ const LinkedIn = (props: SVGProps<SVGSVGElement>) => (
 const Discord = (props: SVGProps<SVGSVGElement>) => (
 	<svg
 		viewBox="0 0 256 199"
-		width="1em"
-		height="1em"
+		width="auto"
+		height="auto"
 		xmlns="http://www.w3.org/2000/svg"
 		preserveAspectRatio="xMidYMid"
 		{...props}
@@ -72,8 +72,8 @@ const Facebook = (props: SVGProps<SVGSVGElement>) => (
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 36 36"
 		fill="url(#a)"
-		height="1em"
-		width="1em"
+		width="auto"
+		height="auto"
 		{...props}
 	>
 		<defs>
@@ -95,8 +95,8 @@ const Threads = (props: SVGProps<SVGSVGElement>) => (
 		xmlns="http://www.w3.org/2000/svg"
 		aria-label="Threads"
 		viewBox="0 0 192 192"
-		width="1em"
-		height="1em"
+		width="auto"
+		height="auto"
 		preserveAspectRatio="xMidYMid"
 		{...props}
 	>
@@ -110,8 +110,8 @@ const Threads = (props: SVGProps<SVGSVGElement>) => (
 const Github = (props: SVGProps<SVGSVGElement>) => (
 	<svg
 		viewBox="0 0 256 250"
-		width="1em"
-		height="1em"
+		width="auto"
+		height="auto"
 		xmlns="http://www.w3.org/2000/svg"
 		preserveAspectRatio="xMidYMid"
 		{...props}

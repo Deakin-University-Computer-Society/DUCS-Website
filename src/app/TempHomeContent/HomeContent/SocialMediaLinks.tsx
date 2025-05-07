@@ -1,81 +1,43 @@
-import { DUSA } from "@/assets/dusa-icon";
 import {
-	Bluesky,
-	Discord,
-	Facebook,
-	Github,
-	Instagram,
-	LinkedIn,
-	Threads,
-} from "@/assets/svgl-icons";
+	social_media_data,
+	SocialMediaLinkType,
+} from "@/assets/social_media_data";
 import { NewNotification } from "@/components/custom/newNotification";
+import { Link } from "react-router-dom";
 
 export function SocaialMediaLinks() {
+	function SocialMediaComponent(value: SocialMediaLinkType) {
+		return (
+			<Link
+				target="_blank"
+				rel="noreferrer"
+				to={value.url}
+				className="flex items-center gap-2 text-sm"
+			>
+				<div
+					style={{ width: 24, height: 24 }}
+					className="flex items-center justify-center"
+				>
+					{value.logo}
+				</div>
+			</Link>
+		);
+	}
+
 	return (
 		<div className="flex flex-row gap-4 mx-auto flex-wrap">
-			<a
-				target="_blank"
-				rel="noreferrer"
-				href="https://www.instagram.com/deakincomputersociety/"
-			>
-				<Instagram className="w-6 h-6" />
-			</a>
-			<a
-				target="_blank"
-				rel="noreferrer"
-				href="https://www.facebook.com/deakincomputersociety/"
-			>
-				<Facebook className="w-6 h-6" />
-			</a>
-			<a
-				target="_blank"
-				rel="noreferrer"
-				href="https://discord.gg/rFjtaf3H4m"
-			>
-				<Discord className="w-6 h-6" />
-			</a>
-			<a
-				target="_blank"
-				rel="noreferrer"
-				href="https://au.linkedin.com/company/deakincomputersociety"
-			>
-				<LinkedIn className="w-6 h-6" />
-			</a>
-
-			<a
-				target="_blank"
-				rel="noreferrer"
-				href="https://github.com/Deakin-University-Computer-Society"
-			>
-				<Github className="w-6 h-6" />
-			</a>
-
-			<NewNotification className="w-6 h-6" width={4}>
-				<a
-					target="_blank"
-					rel="noreferrer"
-					href="https://bsky.app/profile/ducs.club"
-				>
-					<Bluesky className="w-6 h-6" />
-				</a>
-			</NewNotification>
-
-			<NewNotification className="w-6 h-6" width={4}>
-				<a
-					target="_blank"
-					rel="noreferrer"
-					href="https://www.threads.net/@deakincomputersociety"
-				>
-					<Threads className="w-6 h-6" />
-				</a>
-			</NewNotification>
-			<a
-				target="_blank"
-				rel="noreferrer"
-				href="https://www.dusa.org.au/clubs/computer-society"
-			>
-				<DUSA className="w-6 h-6" />
-			</a>
+			{social_media_data.map((value, i) => {
+				if (value.new) {
+					return (
+						<span key={i}>
+							<NewNotification width={4}>
+								{SocialMediaComponent(value)}
+							</NewNotification>
+						</span>
+					);
+				}
+				return <span key={i}>{SocialMediaComponent(value)}</span>;
+			})}
 		</div>
 	);
 }
